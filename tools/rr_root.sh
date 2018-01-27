@@ -34,7 +34,7 @@ echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
-read -t 30 askvariant
+read -t 30 askvariant || askvariant=1
 sleep 1
 if [ "$askvariant" == "0" ];
 then
